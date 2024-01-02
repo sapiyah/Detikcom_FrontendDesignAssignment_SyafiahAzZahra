@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="nav-container">
+            <img src="./img/brand.png" alt="brand">
+            <div class="category">
+                <button id="mybutton" onclick="channgeImage()">
+                    <img src="./img/Category.png" alt="" id="myimage">
+                </button>
+                <div class="nav-menu">
+                    <ul>
+                        <li><a href="#hero">Home</a></li>
+                        <li><a href="#about">Tentang Acara</a></li>
+                        <li><a href="#galeri">Galeri</a></li>
+                        <li><a href="#berita">Berita</a></li>
+                        <li class="nav-button"><a href="https://event.detik.com/" target="_blank">Registrasi</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <div class="hero" id="hero">
+        <div class="hero-container">
+            <img src="./img/logo-event 2.png" alt="logo-event" class="logo-event">
+            <a href="#about"><h5>TENTANG ACARA</h5></a>
+        </div>
+        <!-- <img src="./img/bg-desktop 1.png" alt="background" class="background"> -->
+    </div>
+
+    <!-- About -->
+    <div class="about-container" id="about">
+        <div class="about">
+            <div class="about-content">
+                <div class="card">
+                    <div class="image">
+                        <img src="./img/map 1.png" alt="map">
+                    </div>
+                    <div class="frame-1">
+                        <div class="frame">
+                            <h1>10K FUN RUN</h1>
+                            <p>Dimulai pukul 6 pagi, nikmati pemandangan kota di pagi hari dimulai dari Bundaran HI hingga Patung Pemuda Membangun di Senayan lalu kembali lagi ke Bundaran HI!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame-2">
+                    <div class="thumbnail">
+                        <div class="frame">
+                            <h1>GRATIS DAN BERHADIAH</h1>
+                            <p>Pendaftaran gratis! Ajak keluarga anda dan menangkan hadiah total puluhan juta rupiah doorprize menarik!</p>
+                        </div>
+                    </div>
+                    <div class="thumbnail">
+                        <div class="frame">
+                            <h1>50+ TENANT BAZZAR</h1>
+                            <p>Dapatkan promo menarik pada booth-booth tenant bazzar Sudirman Run 2023 mulai dari F&B hingga fashion</p>
+                        </div>
+                    </div>
+                    <div class="side-image">
+                        <div class="image">
+                            <img src="https://s3-alpha-sig.figma.com/img/7fdd/b4f2/a8d2175ce4c12a0855746da891cd4f17?Expires=1705276800&Signature=Sd2znzdMhbKL-FrCA9i6GcDDITtCWMU6tDGVYdl2p62nsuJOEqYjpo~9kiOkELkys9LSLk~NqPje1fzxTQdit2carcrT~aDMG~7r7QKzWO1klpeQ5qAUycNslPvDKXe2ZLm4Z263aPRzpqy0Iewk1My~P0CMBxmZSskvzSdbU5VR4IVET5D1ExBmgzwMN1c5G~xiPmWp1njYxAc-YMigymEf3f9WkA1NMvBhXo~vIlRN32AfshxPcxv-HYLEkFvWtDTbL8g5Ldop6PiWGK0e9Od~X2hsTgsWj04CcKHtLb5IjnlthjSgRAd94uA9nJNRIJqxgr7aqpEu4XHT~T6ljQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        </div>
+                        <div class="frame-1">
+                            <div class="frame">
+                                <h1>SPECIAL PERFORMANCE</h1>
+                                <p>Saksikan penampilan dari RAN, Ayu Ting Ting, Diskoria, serta hiburan lainnya!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a href="https://event.detik.com" target="_blank"><h5>DAFTAR SEKARANG</h5></a>
+        </div>
+    </div>
+
+    <!-- Sponsors -->
+    <div class="sponsors-container" id="sponsors">
+        <h1>DIDUKUNG OLEH</h1>
+        <div class="frame">
+            <div class="group" id="group">
+                <!-- List -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="galeri-container" id="galeri">
+        <div class="galeri">
+            <h1>GALERI SUDIRMAN RUN 2022</h1>
+            <div class="gallery">
+                <div class="main-pict">
+                    <div class="pict">
+                        <!-- <img src="https://s3-alpha-sig.figma.com/img/18f0/7fa2/c6fa6f98051d31ca65692f6d142a7342?Expires=1704672000&Signature=I7SzqAkn6zTiMBrxjUKMi9hZxVphSeSSaRpAh7r8WaJEDec8tNJYqmFUG296xc3I2PD7GpBgmJvy1NWbU1elcoILRzf3SEnVEB9XkJciMNDrcLpBqSwpm4coqw0whbM9G45Dxn5o-AH3DRgtAonLPVE1mlwVI6D9avb09I10X-jkSu6GS4q4OWOvtZxkMvyoId2zluE~coiCiow~cyjw2swiuaKkrGbm4haCrmjmeoUhj61BpuONIHVMFi9iYovrbEFwDqLAiuCxoQUZ82tS0BTDyLtrFdOT8FHMs4SKFjn~wyVMmSLc7dpqdiYCzAQzjquO1nZ1A~1gjYceez-ptw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt=""> -->
+                        <div class="item-pict active">
+                            <img src="https://s3-alpha-sig.figma.com/img/18f0/7fa2/c6fa6f98051d31ca65692f6d142a7342?Expires=1704672000&Signature=I7SzqAkn6zTiMBrxjUKMi9hZxVphSeSSaRpAh7r8WaJEDec8tNJYqmFUG296xc3I2PD7GpBgmJvy1NWbU1elcoILRzf3SEnVEB9XkJciMNDrcLpBqSwpm4coqw0whbM9G45Dxn5o-AH3DRgtAonLPVE1mlwVI6D9avb09I10X-jkSu6GS4q4OWOvtZxkMvyoId2zluE~coiCiow~cyjw2swiuaKkrGbm4haCrmjmeoUhj61BpuONIHVMFi9iYovrbEFwDqLAiuCxoQUZ82tS0BTDyLtrFdOT8FHMs4SKFjn~wyVMmSLc7dpqdiYCzAQzjquO1nZ1A~1gjYceez-ptw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        </div>
+                        <div class="item-pict">
+                            <img src="https://s3-alpha-sig.figma.com/img/4f42/6cd5/d9994df19dde650523857ec927765fbb?Expires=1704672000&Signature=MR6zJgAP2FkhwBU8L8PHShL2PWm80CacZigmbbwPSs83NxrVeP-ZbL3hshQ5WPXm0sREYl-myPs52uzqbXK5951cWCmY1vmrJC3prclMthlp~LPQz38dPmIQP7X68lmhsgg63d9-JOIdTqoXyo9Tmv3sKbhxprCJz2Hc~d0oAUwesuQUa20359aqui~6H5WOqTpGCQvhMRh2165yVgDuNPaP3Ws7n9dTbCroQIc7BA8vXVYILTNGf1e0OpEZTy8Rq9yF2hE608MmcGNZw~-qXeXacmq~MCsYokvNQXCzXfYM8H5X7nTzt5a3o5JQNefX9rG8MZn4Ldo3WXK3y7rKfQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        </div>
+                        <div class="item-pict">
+                            <img src="https://s3-alpha-sig.figma.com/img/c787/9865/db521a14c80245fadb02ff7448cc3335?Expires=1704672000&Signature=ApKea2861xXw8LvgwG1yVHwTVqlPNZRyHH80S5zAykRSYrlKtv4h-aEJC3-mXbTotZU8AwMZWGUTw9YDFyJ8YrdjupCaQ8iTK8l3f672E~KYfXxNAJCKdZ7cMqqGAVXJoXN7akMce8AycgNiy5mBH6jUdYPb100l7xLcm2WTVUbAHqOqbY3mL4muhzmdBqhxPDsozt1VHOmdR4owyzLhNrv2qKkN3iQUeNTGFgkErOHdD1oVSn83jPhtxYElLSmglIsI7LDjwayQAwGQBdydLsgM1NgRvGahuNEWmKpANBokuX19nfEkcVwN2H-YPDxLS-NCMmSlzcQ9zo-yyk1~jA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        </div>
+                        <div class="item-pict">
+                            <img src="https://s3-alpha-sig.figma.com/img/77e7/ed29/dfc7a171fb13c778e5fdd222fb1470cc?Expires=1704672000&Signature=PwdXJM8SwzH3DK71W8six9mPi6kbGW1HO3Tgl-gNNZiQvLgmn592vhjQQnAKzm~3aCbr0k4kPxrWJfu8Cr5z0MoBNAvMA99Jf3coi7jTPgfWRAlFYqinFd7yYvvucHfWbPFLqxb467susvhPYNFkExFvZZjeBfarAj53pgvHzMtOt0MvS1XJvmN2dLU2K5a1PI3j0Y9gEo1dq1oL4b683KOm0YOeOcguHxcdG7Zk9jTL74waVnfEAI~cEjpugwfhOwCfJftOMce8ECZJApV3IC13otC~nKFG24jTCiublULJ8g9MEMd0rR~XPduWl1AB8A3mU-5UTYS-oUdLkfZRtg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                        </div>
+                    </div>
+                    <div class="group">
+                        <button type="button" id="arrow-left"><i class="fa-solid fa-angle-left fa-lg"></i></button>
+                        <button type="button" id="arrow-right"><i class="fa-solid fa-angle-right fa-lg"></i></button>
+                    </div>
+                </div>
+                <div class="thumb-list">
+                    <div class="thumbnail active">
+                        <img src="https://s3-alpha-sig.figma.com/img/18f0/7fa2/c6fa6f98051d31ca65692f6d142a7342?Expires=1704672000&Signature=I7SzqAkn6zTiMBrxjUKMi9hZxVphSeSSaRpAh7r8WaJEDec8tNJYqmFUG296xc3I2PD7GpBgmJvy1NWbU1elcoILRzf3SEnVEB9XkJciMNDrcLpBqSwpm4coqw0whbM9G45Dxn5o-AH3DRgtAonLPVE1mlwVI6D9avb09I10X-jkSu6GS4q4OWOvtZxkMvyoId2zluE~coiCiow~cyjw2swiuaKkrGbm4haCrmjmeoUhj61BpuONIHVMFi9iYovrbEFwDqLAiuCxoQUZ82tS0BTDyLtrFdOT8FHMs4SKFjn~wyVMmSLc7dpqdiYCzAQzjquO1nZ1A~1gjYceez-ptw__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://s3-alpha-sig.figma.com/img/4f42/6cd5/d9994df19dde650523857ec927765fbb?Expires=1704672000&Signature=MR6zJgAP2FkhwBU8L8PHShL2PWm80CacZigmbbwPSs83NxrVeP-ZbL3hshQ5WPXm0sREYl-myPs52uzqbXK5951cWCmY1vmrJC3prclMthlp~LPQz38dPmIQP7X68lmhsgg63d9-JOIdTqoXyo9Tmv3sKbhxprCJz2Hc~d0oAUwesuQUa20359aqui~6H5WOqTpGCQvhMRh2165yVgDuNPaP3Ws7n9dTbCroQIc7BA8vXVYILTNGf1e0OpEZTy8Rq9yF2hE608MmcGNZw~-qXeXacmq~MCsYokvNQXCzXfYM8H5X7nTzt5a3o5JQNefX9rG8MZn4Ldo3WXK3y7rKfQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://s3-alpha-sig.figma.com/img/c787/9865/db521a14c80245fadb02ff7448cc3335?Expires=1704672000&Signature=ApKea2861xXw8LvgwG1yVHwTVqlPNZRyHH80S5zAykRSYrlKtv4h-aEJC3-mXbTotZU8AwMZWGUTw9YDFyJ8YrdjupCaQ8iTK8l3f672E~KYfXxNAJCKdZ7cMqqGAVXJoXN7akMce8AycgNiy5mBH6jUdYPb100l7xLcm2WTVUbAHqOqbY3mL4muhzmdBqhxPDsozt1VHOmdR4owyzLhNrv2qKkN3iQUeNTGFgkErOHdD1oVSn83jPhtxYElLSmglIsI7LDjwayQAwGQBdydLsgM1NgRvGahuNEWmKpANBokuX19nfEkcVwN2H-YPDxLS-NCMmSlzcQ9zo-yyk1~jA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                    </div>
+                    <div class="thumbnail">
+                        <img src="https://s3-alpha-sig.figma.com/img/77e7/ed29/dfc7a171fb13c778e5fdd222fb1470cc?Expires=1704672000&Signature=PwdXJM8SwzH3DK71W8six9mPi6kbGW1HO3Tgl-gNNZiQvLgmn592vhjQQnAKzm~3aCbr0k4kPxrWJfu8Cr5z0MoBNAvMA99Jf3coi7jTPgfWRAlFYqinFd7yYvvucHfWbPFLqxb467susvhPYNFkExFvZZjeBfarAj53pgvHzMtOt0MvS1XJvmN2dLU2K5a1PI3j0Y9gEo1dq1oL4b683KOm0YOeOcguHxcdG7Zk9jTL74waVnfEAI~cEjpugwfhOwCfJftOMce8ECZJApV3IC13otC~nKFG24jTCiublULJ8g9MEMd0rR~XPduWl1AB8A3mU-5UTYS-oUdLkfZRtg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Berita -->
+    <div class="berita-container" id="berita">
+        <div class="berita">
+            <h1>ARTIKEL TERKAIT</h1>
+            <div class="content">
+                <div class="navbar">
+                    <div class="menu">
+                        <ul>
+                            <li><a href="#berita" class="artikel active" id="artikel">Artikel</a></li>
+                            <li><a href="#berita" class="artikel" id="foto">Foto</a></li>
+                            <li><a href="#berita" class="artikel" id="video">Video</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="frame ">
+                    <div class="frame-container active">
+                        <div class="frame-1" id="frame-1">
+                            <!-- list -->
+                        </div>
+                    </div>
+                    <div class="frame-container">
+                        <div class="frame-2" id="frame-2">
+                            <!-- list -->
+                        </div>
+                    </div>
+                    <div class="frame-container">
+                        <div class="frame-3" id="frame-3">
+                            <!-- list -->
+                        </div>
+                    </div>
+                    <a href="https://www.detik.com/search/searchall?query=fun+run&siteid=2" target="_blank"><h5>LIHAT LEBIH BANYAK</h5></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="group">
+            <img src="./img/logo-event 2 (1).png" alt="">
+        </div>
+        <div class="frame">
+            <p>Event olahraga lari sejauh 10 kilometer yang diselenggarakan oleh Detikhealth secara gratis untuk masyarakat Indonesia. Ajak keluarga dan kerabat anda untuk ikut keseruan Sudirman Run 2023 lalu menangkan hadiah utama serta doorprize dengan total puluhan juta rupiah</p>
+            <div class="frame-1">
+                <div class="atoms">
+                    <p>Connect With Us</p>
+                </div>
+                <div class="moleculs">
+                    <div class="facebook">
+                        <i class="fa-brands fa-facebook fa-2xl" style="color: #3B5998;"></i>
+                    </div>
+                    <div class="twitter">
+                        <i class="fa-brands fa-x-twitter fa-lg" style="color: white;"></i>
+                    </div>
+                    <div class="instagram">
+                        <i class="fa-brands fa-instagram fa-xl" style="color: white;"></i>
+                    </div>
+                    <div class="linkedin">
+                        <i class="fa-brands fa-linkedin-in fa-lg" style="color: white;"></i>
+                    </div>
+                    <div class="youtube">
+                        <i class="fa-brands fa-youtube fa-lg" style="color: white;"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <p class="copyright">Copyright @ 2023 detikcom. All right reserved</p>
+    </footer>
+
+
+    <!-- <img src="./img/alpha-jwc1.png" alt=""> -->
+    <!-- <i class="fa-solid fa-angle-left"></i> -->
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
